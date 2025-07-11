@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet');
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgba(250, 250, 250);
+    /*background: #fdf3ef;*/
+}
+
+/* App container layout */
+.appLayout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content should expand to fill available space */
+.mainContent {
+    flex: 1;
+}
+
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body{
+    font-family: "Baskervville SC", serif;
+    min-height: 100%;
+
+}
+
+/*Animations*/
+    @keyframes slideInTop {
+        from {
+            transform: translateY(-60px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInBottom {
+        from {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #4b2e2e; }
+    }
+
+    .fade-up {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 0.8s ease-out;
+    }
+
+    .fade-up.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+/*END Animations*/
